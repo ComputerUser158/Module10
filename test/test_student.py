@@ -22,10 +22,10 @@ class MyTestCase(unittest.TestCase):
 		assert student.major == 'Programming'
 		assert student.gpa == 4.0
 
-"""
-	def test_something(self):
-		self.assertEqual(True, False)
+	def test_student_string(self):
+		self.assertEqual(str(self.student), "Collins, Rawley has major Programming with gpa: 0.0")
 
+"""
 	def test_something(self):
 		self.assertEqual(True, False)
 
