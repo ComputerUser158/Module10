@@ -32,9 +32,10 @@ class MyTestCase(unittest.TestCase):
 	def test_object_not_created_error_first_name(self):
 		with self.assertRaises(ValueError):
 			stu = t.Student("Collins", "1234kljkjg", "Programming", 0.0)
-"""
-	def test_something(self):
-		self.assertEqual(True, False)"""
+
+	def test_object_not_created_error_major(self):
+		with self.assertRaises(ValueError):
+			stu = t.Student("Collins", "Rawley", "Music", 0.0)
 
 
 if __name__ == '__main__':
