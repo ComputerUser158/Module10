@@ -25,10 +25,11 @@ class MyTestCase(unittest.TestCase):
 	def test_student_string(self):
 		self.assertEqual(str(self.student), "Collins, Rawley has major Programming with gpa: 0.0")
 
-"""
-	def test_something(self):
-		self.assertEqual(True, False)
+	def test_object_not_created_error_last_name(self):
+		with self.assertRaises(ValueError):
+			stu = t.Student("1234kljfdi", "Rawley", "Programming", 0.0)
 
+"""
 	def test_something(self):
 		self.assertEqual(True, False)
 
